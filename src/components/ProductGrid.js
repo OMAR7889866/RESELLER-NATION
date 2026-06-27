@@ -16,7 +16,7 @@ function ProductGrid({ shoes, onShoeClick }) {
               <img src={shoe.image} alt={shoe.name} />
             </div>
             <div className="product-info">
-              <p className="product-category">Designer Shoes</p>
+              <p className="product-category">{shoe.category}</p>
               <h3 className="product-name">{shoe.name}</h3>
               <p className="product-price">{shoe.price}</p>
             </div>

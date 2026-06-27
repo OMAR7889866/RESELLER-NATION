@@ -36,7 +36,10 @@ function App() {
   const handleShoeClick = (shoe) => {
     setSelectedShoe(shoe);
     setTimeout(() => {
-      document.querySelector('.payment-section').scrollIntoView({ behavior: 'smooth' });
+      const paymentSection = document.querySelector('.payment-section');
+      if (paymentSection) {
+        paymentSection.scrollIntoView({ behavior: 'smooth' });
+      }
     }, 100);
   };
 
